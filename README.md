@@ -1,6 +1,6 @@
 # Copilot Chat Terminal
 
-[![Version](https://img.shields.io/badge/version-0.0.1-blue.svg)](https://github.com/yourusername/copilot-terminal-in-chat)
+[![Version](https://img.shields.io/badge/version-0.0.1-blue.svg)](https://github.com/govind0229/copilot-chat-terminal/releases/tag/v0.0.1)
 [![VS Code](https://img.shields.io/badge/VS_Code-1.103.0+-blue.svg)](https://code.visualstudio.com/)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 
