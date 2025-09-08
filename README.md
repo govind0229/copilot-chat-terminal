@@ -144,12 +144,14 @@ pip install requests # Install Python package
 ### Enable as Default Handler
 
 **Option 1: VS Code Settings**
+
 1. Open VS Code Settings (`Ctrl+,`)
 2. Search for: `terminal.defaultChatBehavior`
 3. Check the box to enable
 
 **Option 2: Settings JSON**
 Add to your `settings.json`:
+
 ```json
 {
   "terminal.defaultChatBehavior": true
@@ -157,13 +159,14 @@ Add to your `settings.json`:
 ```
 
 **Option 3: Command Palette**
+
 1. Press `Ctrl+Shift+P`
 2. Run: `Make Terminal Default for Copilot Chat`
 
 ### Configuration Options
 
-| Setting | Default | Description |
-|---------|---------|-------------|
+| Setting                          | Default  | Description                                         |
+| -------------------------------- | -------- | --------------------------------------------------- |
 | `terminal.defaultChatBehavior` | `true` | Make terminal execution the default in Copilot Chat |
 
 ## 🔍 Command Detection
@@ -171,17 +174,20 @@ Add to your `settings.json`:
 The extension uses intelligent pattern recognition to distinguish terminal commands from natural language:
 
 ### ✅ **Detected as Commands:**
+
 - Any word starting with letter/digit/underscore/hyphen
 - Commands with path separators (`/`, `./`, `~/`)
 - Commands with shell operators (`|`, `>`, `>>`, `<`, `&`, `;`)
 - Common executable patterns
 
 ### ❌ **Not Detected (Natural Language):**
+
 - Questions starting with: what, how, can, is, do, please, help
 - Conversational phrases: "I want", "can you", "please show"
 - Sentences with articles: "the", "a", "an"
 
 ### Examples:
+
 ```bash
 ✅ pwd                    # Detected as command
 ✅ ls -la                 # Detected as command
@@ -196,7 +202,9 @@ The extension uses intelligent pattern recognition to distinguish terminal comma
 ## 🔧 Troubleshooting
 
 ### Command Not Found
+
 If you see "Command not found" errors:
+
 ```bash
 # macOS with Homebrew
 brew install <command>
@@ -209,12 +217,14 @@ sudo yum install <command>
 ```
 
 ### Extension Not Working
+
 1. **Reload VS Code**: `Ctrl+Shift+P` → `Developer: Reload Window`
 2. **Check Settings**: Ensure `terminal.defaultChatBehavior` is enabled
 3. **Restart Extension**: Disable and re-enable the extension
 4. **Check Copilot**: Ensure GitHub Copilot extension is installed
 
 ### Permission Issues
+
 ```bash
 # For permission denied errors
 sudo chmod +x script.sh
@@ -222,7 +232,9 @@ sudo chown $USER file.txt
 ```
 
 ### Timeout Errors
+
 Commands automatically timeout after 30 seconds. For long-running commands:
+
 ```bash
 # Use nohup for background execution
 nohup long-running-command &
@@ -234,11 +246,13 @@ timeout 300 long-command  # 5-minute timeout
 ## 🛠️ Development
 
 ### Prerequisites
+
 - Node.js 16+
 - VS Code 1.103.0+
 - GitHub Copilot extension
 
 ### Build Commands
+
 ```bash
 npm run compile          # Compile TypeScript
 npm run watch           # Watch for changes
@@ -247,6 +261,7 @@ npm run lint            # Lint code
 ```
 
 ### Packaging
+
 ```bash
 # Install packaging tool
 npm install -g @vscode/vsce
@@ -259,6 +274,7 @@ code --install-extension copilot-terminal-in-chat-0.0.1.vsix
 ```
 
 ### Project Structure
+
 ```
 ├── src/
 │   ├── extension.ts          # Main extension code
@@ -285,6 +301,7 @@ We welcome contributions! Please follow these steps:
 7. **Open** a Pull Request
 
 ### Development Guidelines
+
 - Follow TypeScript best practices
 - Add unit tests for new features
 - Update documentation
@@ -305,7 +322,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 - **Issues**: [GitHub Issues](https://github.com/yourusername/copilot-terminal-in-chat/issues)
 - **Discussions**: [GitHub Discussions](https://github.com/yourusername/copilot-terminal-in-chat/discussions)
-- **Email**: your.email@example.com
+- **Email**: govind_sharma@live.com
 
 ---
 

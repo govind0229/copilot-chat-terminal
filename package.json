@@ -4,6 +4,7 @@
   "description": "copilot terminal in-chat",
   "version": "0.0.1",
   "publisher": "govind0229",
+  "license": "MIT",
   "engines": {
     "vscode": "^1.103.0"
   },
