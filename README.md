@@ -56,7 +56,7 @@ Transform GitHub Copilot Chat into a powerful terminal interface! Execute any te
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/copilot-terminal-in-chat.git
+git clone https://github.com/govind0229/copilot-terminal-in-chat.git
 cd copilot-terminal-in-chat
 
 # Install dependencies
@@ -64,6 +64,9 @@ npm install
 
 # Launch extension development host
 npm run compile
+
+npx vsce package
+
 code --extensionDevelopmentPath=.
 ```
 
